@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>지원서</title>
+</head>
+<body>
+    <form action="NEXT.html" method="post">
+        <h1>모같코 지원서</h1>
+        <h3>(*모든 입력란은 필수입력입니다.)</h3>
+        <b>현재 하시고 있는 일은 무엇인가요?</b><br><br>
+        <input type="radio" name="job" value="대학생" checked="checked">대학생<br>
+        <input type="radio" name="job" value="직장인">직장인<br>
+        <input type="radio" name="job" value="취준생">취업준비생<br>
+        <input type="radio" name="job" value="기타생">기타..<br><br>
+        <b>간단하게 자기소개 적어주세요^^(*최대10자)</b><br><br>
+        <b>(이름, 성별, 취미 등)</b><br><br>
+        <input type="text" placeholder="짧게" maxlength="10" required="required"><br><br>
+        <b>나이가 어떻게 될까요?</b><br><br>
+        <b>예)20</b><br><br>
+        <input type="number" placeholder="20" required="required" min="0" max="99" size="3"><br><br>
+        <b>사는 곳이 어떻게 될까요?</b><br><br>
+        <b>(근처 지하철역 또는 00구 00동 이라고 적어주시면 됩니다.)</b><br><br>
+        <input type="text" placeholder="집" required="required"><br><br>
+        <b>이메일</b><br><br>
+        <b>예)aaa@naver.com*이메일 형식으로만 입력가능</b><br><br>
+        <input type="email" placeholder="aaa@gmail.com" required="required"><br><br>
+        <b>하고싶은 말</b><br><br>
+        <textarea required="required" rows="10" cols="30"></textarea><br>
+        <hr>
+        <INPUT TYPE="submit" value="지원서 제출">
+    </form>
+</body>
+</html>
