@@ -1,0 +1,11 @@
+span{ color :red; }
+선택자 {property :value; }
+
+적용하는 세가지 방법
+이 순서가 우선순위이다.
+inline
+    html 태그 안에다 넣는 방법.
+internal
+    헤드 안에 style 태그로 넣는 방법. 별도에 css 파일을 쓰지 않아도 된다.
+external
+    외부파일(.css) 로 저장하기. 이렇게 많이 한다.
