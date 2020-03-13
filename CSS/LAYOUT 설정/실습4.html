@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FLEX</title>
+    <style>
+        .wrap{
+            background-color: slategray;
+            height: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .wrap > div{
+            flex-grow: 1;
+            margin: 0.2rem;
+            background-color: skyblue;
+            color: white;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div>일</div>
+        <div>이</div>
+        <div>3</div>
+    </div>
+</body>
+</html>
