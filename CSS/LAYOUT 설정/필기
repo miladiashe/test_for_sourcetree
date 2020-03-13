@@ -5,3 +5,6 @@ absolute 를 이용하면 다른 요소들은 absolute 처리된 요소를 무�
 absolute 의 위치 기준은 상위클래스 중 static 이 아닌놈
 fixed 는 스크롤이 생길 때 움직이지 않는다.
 기준점을 잡기 위해 움직이지 않더라도 relative 로 설정하고 top, left 값을 안 줄 수도 있다.
+
+Float 기반 레이아웃
+float 은 자리 잡기 어렵다. margin 등으로 위치 선정.
