@@ -1,0 +1,7 @@
+포지션 속성을 이용한 레이아웃
+static 기본값
+relative 는 top, left 값을 이용해 static 의 위치에서 상대적으로 움직인다.
+absolute 를 이용하면 다른 요소들은 absolute 처리된 요소를 무시하고 정렬된다.
+absolute 의 위치 기준은 상위클래스 중 static 이 아닌놈
+fixed 는 스크롤이 생길 때 움직이지 않는다.
+기준점을 잡기 위해 움직이지 않더라도 relative 로 설정하고 top, left 값을 안 줄 수도 있다.
