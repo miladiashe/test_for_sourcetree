@@ -1,4 +1,25 @@
+@font-face { font-family: 'DungGeunMo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff'); font-weight: normal; font-style: normal; }
+
 body{
     background: url("몽환배경.png") no-repeat  center center fixed;
     background-size: cover;
+    font-family: 'DungGeunMo', serif;
+}
+.whole{
+    color: blueviolet;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top:-150px;
+    margin-left:-300px;
+}
+h1 {
+    font-weight: normal;
+}
+
+h2 {
+    font-weight: normal;
+}
+a{
+    color: blueviolet;
 }
