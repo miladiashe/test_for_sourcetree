@@ -1,18 +1,10 @@
-import React from 'react';
-import './App.css';
+import React, { Component } from 'react';
 
-function App() {
-  const name = '리액트';
-
-  return (
-    <div>
-      <div className="react">
-        <h1>들여쓰기가</h1>
-        <h2>이상한</h2>
-      </div>
-      <p>코드</p>
-    </div>
-  );
+class App extends Component{
+  render(){
+    const name = 'react';
+    return <div className='react'>{name}</div>
+  }
 }
 
 export default App;
