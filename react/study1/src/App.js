@@ -5,9 +5,13 @@ function App() {
   const name = '리액트';
 
   return (
-     <div className="react">
-      {name}
-     </div>
+    <div>
+      <div className="react">
+        <h1>들여쓰기가</h1>
+        <h2>이상한</h2>
+      </div>
+      <p>코드</p>
+    </div>
   );
 }
 
