@@ -1,8 +1,12 @@
-import React from 'react';
-import MyComponent from "./MyComponent";
+import React, { Component } from 'react';
+import IterationSample from "./IterationSample.js";
 
-const App = () => {
-  return <MyComponent name = "React" favoriteNumber={22}>리액트</MyComponent>;
-};
+class App extends Component {
+  render(){
+    return(
+        <IterationSample/>
+    );
+  }
+}
 
 export default App;
