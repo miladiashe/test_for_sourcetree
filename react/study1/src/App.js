@@ -1,12 +1,8 @@
-import React, { Component } from 'react';
-import IterationSample from "./IterationSample.js";
+import React from 'react';
+import EventPractice from './EventPractice'
 
-class App extends Component {
-  render(){
-    return(
-        <IterationSample/>
-    );
-  }
-}
+const  App = () => {
+  return <EventPractice />;
+};
 
 export default App;
