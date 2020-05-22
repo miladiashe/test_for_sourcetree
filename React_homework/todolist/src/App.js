@@ -1,14 +1,16 @@
-import React, {Component} from 'react';
-import StyledComponent from "./StyledComponent";
+import React from 'react';
+import styled, { createGlobalStyle }  from 'styled-components';
 
-class App extends Component{
-  render(){
-    return (
-        <div>
-          <StyledComponent/>
-        </div>
-    );
+const GlobalStyle = createGlobalStyle`
+  body{
+  margin: 0;
+  padding: 0;
+  background: #e9ecef;
   }
-}
+`
+
+const App = () =>{
+    return<div><GlobalStyle/>Todo 앱을 만들자!</div>
+};
 
 export default App;

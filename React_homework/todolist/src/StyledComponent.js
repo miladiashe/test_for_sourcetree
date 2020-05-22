@@ -1,5 +1,5 @@
 import React from 'react';
-import Styled, {css} from 'styled-components';
+import styled, {css} from 'styled-components';
 
 const sizes = {
     desktop: 1024,
@@ -15,7 +15,7 @@ const media = Object.keys(sizes).reduce((acc, label) => {
     return acc;
 }, {});
 
-const Box = Styled.div`
+const Box = styled.div`
     background: ${props => props.color || 'blue'};
     padding: 1rem;
     display: flex;
@@ -25,7 +25,7 @@ const Box = Styled.div`
     ${media.tablet`width:100%`};
     `;
 
-const Button = Styled.button`
+const Button = styled.button`
     background: white;
     color: black;
     border-radius: 4px;
