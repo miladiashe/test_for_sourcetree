@@ -8,12 +8,12 @@ const TDL = styled.div`
   overflow-y: auto;
 `
 
-const TodoList = () =>{
+const TodoList = ({todos}) =>{
     return (
         <TDL>
-            <TodoListItem/>
-            <TodoListItem/>
-            <TodoListItem/>
+            {todos.map(todo =>(
+                <TodoListItem todo={todo} key={todo.id} />
+            ))}
         </TDL>
     );
 };
