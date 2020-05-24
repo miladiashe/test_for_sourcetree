@@ -5,7 +5,7 @@ import {
     MdRemoveCircleOutline
 } from "react-icons/md";
 import cn from 'classnames';
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
 const TDLI = styled.div`
   padding: 1rem;
@@ -17,30 +17,32 @@ const TDLI = styled.div`
   & + &{
     border-top: 1px solid #dee2e6;
   }
-  .checkbox{
-    cursor: pointer;
-  flex: 1;
-  display: flex;
-  align-items: center;
-  svg {
-    font-size: 1.5rem;
-  }
-  .text{
-    margin-left: 0.5rem;
-    flex: 1;
-  }
-  &:checked {
-    svg{
-      color: #228cf;
-    }
-    .text{
-      color: #adb5bd;
-      text-decoration: line-through;
-    }
-  }
-  }
+
 `;
 
+const Checkbox = styled.div`
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    svg {
+        font-size: 1.5rem;
+    }
+  ${props => props.checked && css`
+        svg{
+            color: #228cf;
+        }
+    `};
+`
+
+const Text = styled.div`
+  margin-left: 0.5rem;
+  flex: 1;
+  ${props => props.checked && css`
+      color: #adb5bd;
+      text-decoration: line-through;
+    `};
+`
 
 const Remove = styled.div`
   display: flex;
@@ -57,10 +59,10 @@ const TodoListItem = ({todo}) => {
     const {text, checked} = todo;
   return(
       <TDLI>
-          <div classname={cn('checkbox', {checked})}>
+          <Checkbox checked={checked}>
               {checked ? <MdCheckBox/> : <MdCheckBoxOutlineBlank/>}
-              <div classname="text">{text}</div>
-          </div>
+              <Text checked={checked}>{text}</Text>
+          </Checkbox>
           <Remove>
               <MdRemoveCircleOutline/>
           </Remove>
